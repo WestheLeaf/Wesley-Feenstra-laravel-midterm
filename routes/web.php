@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ManufacturerController;
+use App\Http\Controllers\EquipmentController;
+use App\Http\Controllers\InvoiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::resource('/customer', CustomerController::class);
+Route::resource('/manufacturer', ManufacturerController::class);
+Route::resource('/equipment', EquipmentController::class);
+Route::resource('/invoice', InvoiceController::class);
 
 Route::get('/', function () {
     return view('welcome');
