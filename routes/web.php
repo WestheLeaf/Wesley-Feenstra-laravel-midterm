@@ -6,6 +6,8 @@ use App\Http\Controllers\ManufacturerController;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\InvoiceController;
 
+URL::forceScheme('https');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
