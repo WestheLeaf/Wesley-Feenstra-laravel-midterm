@@ -6,5 +6,10 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
-    //
+    public function index()
+    {
+        $customers = Customer::all();
+        return view('customer.list', compact('customers'));
+
+    }
 }
