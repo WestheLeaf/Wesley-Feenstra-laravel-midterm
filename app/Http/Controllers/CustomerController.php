@@ -8,7 +8,7 @@ class CustomerController extends Controller
 {
     public function index()
     {
-        $customers = Customer::all();
+        $customers = customer::all();
         return view('customer.list', compact('customers'));
 
     }
