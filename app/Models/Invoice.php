@@ -10,7 +10,8 @@ class invoice extends Model
     use HasFactory;
     protected $fillable = [
         'purchase_date',
-        'customer_id'
+        'customer_id',
+        'equipment_id'
     ];
 
 
@@ -21,6 +22,6 @@ class invoice extends Model
 
     public function equipments()
     {
-        return $this->belongsToMany(Equipment::class, 'invoice_equipment');
+        return $this->belongsTo(Equipment::class);
     }
 }

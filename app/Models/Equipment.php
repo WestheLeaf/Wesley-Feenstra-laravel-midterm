@@ -19,6 +19,6 @@ class equipment extends Model
 
     public function invoices()
     {
-        return $this->belongsToMany(Invoice::class, 'invoice_equipment');
+        return $this->hasMany(Invoice::class);
     }
 }
