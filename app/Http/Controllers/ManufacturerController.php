@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\Models\manufacturer;
 
 class ManufacturerController extends Controller
 {
