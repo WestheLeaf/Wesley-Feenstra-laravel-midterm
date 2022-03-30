@@ -10,6 +10,6 @@ class EquipmentController extends Controller
     public function index()
     {
         $equipment = Equipment::all();
-        return json_encode(compact('equipment'));
+        return view('Equipment.list', compact('equipments'));
     }
 }
