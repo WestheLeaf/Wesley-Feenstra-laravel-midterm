@@ -21,4 +21,9 @@ class equipment extends Model
     {
         return $this->hasMany(Invoice::class);
     }
+
+    public function notes()
+    {
+        return $this->hasMany(Notes::class);
+    }
 }
