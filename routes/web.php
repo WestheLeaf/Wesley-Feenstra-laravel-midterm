@@ -6,7 +6,6 @@ use App\Http\Controllers\ManufacturerController;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\InvoiceController;
 
-URL::forceScheme('https');
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +26,7 @@ Route::resource('/invoice', InvoiceController::class);
 Route::get('/', function () {
     return view('welcome');
 });
+URL::forceScheme('https');
 
 Route::get('/db-test', function () {
     try {         
