@@ -10,6 +10,6 @@ class EquipmentController extends Controller
     public function index()
     {
         $equipment = Equipment::all();
-        return view('Equipment.list', compact('equipment'));
+        return view('equipment.list', compact('equipment'));
     }
 }
