@@ -12,13 +12,16 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 10px">ID#</th><th>Customer</th><th>Items</th><th>Total Cost</th><th>Purchase Date</th><th style="width: 40px">Action</th>
+          <th style="width: 10px">ID#</th><th>Customer</th><th>Items</th><th>Price</th><th>Purchase Date</th><th style="width: 40px">Action</th>
         </tr>
       </thead>
       <tbody>
         @foreach($invoices AS $invoice)
         <tr>
           <td>{{ $invoice->id }}</td>
+          <td>{{ $customers->customer_id }}</td>
+          <td>{{ $equipments->name }}</td>
+          <td>{{ $equipments->price }}</td>
           <td>{{ $invoice->purchase_date }}</td>
           <td><a class="btn btn-default btn-sm" href="{{ route('invoice.show',['invoice'=>$invoice->id]) }}">View</a></td>
         </tr>
