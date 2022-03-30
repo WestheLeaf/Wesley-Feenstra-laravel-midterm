@@ -25,3 +25,11 @@ Route::resource('/invoice', InvoiceController::class);
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/db-test', function () {
+    try {         
+         echo \DB::connection()->getDatabaseName();     
+    } catch (\Exception $e) {
+          echo 'None';
+    }
+});
