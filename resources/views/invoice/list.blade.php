@@ -12,7 +12,7 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 40px">ID#</th><th>Customer</th><th>Items</th><th>Price</th><th>Purchase Date</th><th style="width: 40px">Action</th>
+          <th style="width: 40px">ID#</th><th>Customer</th><th>Items</th><th>Price</th><th>Purchase Date</th>
         </tr>
       </thead>
       <tbody>
@@ -23,7 +23,6 @@
           <td>{{ $equipments->name }}</td>
           <td>{{ $equipments->price }}</td>
           <td>{{ $invoice->purchase_date }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('invoice.show',['invoice'=>$invoice->id]) }}">View</a></td>
         </tr>
         @endforeach
       </tbody>
