@@ -24,8 +24,8 @@
             <dt class="col-sm-3">Purchase Date</dt>
             <dd class="col-sm-9">{{ $invoice->purchase_date }}</dd>
 
-            <dt class="col-sm-3">Total Cost</dt>
-            <dd class="col-sm-9">${{ $invoice->total_price() }}</dd>
+            <dt class="col-sm-3">Cost</dt>
+            <dd class="col-sm-9">${{ $invoice->equipment->price }}</dd>
         </dl>
     </div>
   </div>
