@@ -18,10 +18,10 @@
       <tbody>
         @foreach($equipments AS $equipment)
         <tr>
-          <td>{{ $equipments->id }}</td>
-          <td>{{ $equipments->name }}</td>
-          <td>{{ $manufacturers->name }}</td>
-          <td>{{ $equipments->category }}</td>
+          <td>{{ $equipment->id }}</td>
+          <td>{{ $equipment->name }}</td>
+          <td>{{ $equipment->manufacturer->name }}</td>
+          <td>{{ $equipment->category }}</td>
           <td><a class="btn btn-default btn-sm" href="{{ route('equipment.show',['equipment'=>$equipment->id]) }}">View</a></td>
         </tr>
         @endforeach
