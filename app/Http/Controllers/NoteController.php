@@ -32,4 +32,10 @@ class NoteController extends Controller
         Note::create($form->getFieldValues());
         return $this->index();
     }
+
+    public function show($id)
+    {
+        $note = Note::find($id);
+        return view('note.detail', compact('note'));
+    }
 }

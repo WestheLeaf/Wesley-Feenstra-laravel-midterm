@@ -31,4 +31,10 @@ class ManufacturerController extends Controller
         Manufacturer::create($form->getFieldValues());
         return $this->index();
     }
+
+    public function show($id)
+    {
+        $manufacturer = Manufacturer::find($id);
+        return view('manufacturer.detail', compact('manufacturer'));
+    }
 }

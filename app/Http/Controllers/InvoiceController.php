@@ -32,4 +32,10 @@ class InvoiceController extends Controller
         Invoice::create($form->getFieldValues());
         return $this->index();
     }
+
+    public function show($id)
+    {
+        $invoice = Invoice::find($id);
+        return view('invoice.detail', compact('invoice'));
+    }
 }
