@@ -19,9 +19,9 @@
         @foreach($invoices AS $invoice)
         <tr>
           <td>{{ $invoice->id }}</td>
-          <td>{{ $customers->customer_id }}</td>
-          <td>{{ $equipments->name }}</td>
-          <td>{{ $equipments->price }}</td>
+          <td>{{ $invoice->customer->customer_id }}</td>
+          <td>{{ $invoice->equipment->name }}</td>
+          <td>{{ $invoice->equipment->price }}</td>
           <td>{{ $invoice->purchase_date }}</td>
         </tr>
         @endforeach
