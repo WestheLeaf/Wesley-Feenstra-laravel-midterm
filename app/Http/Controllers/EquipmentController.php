@@ -35,7 +35,7 @@ class EquipmentController extends Controller
 
     public function show($id)
     {
-        $customer = Equipment::find($id);
-        return view('equipment.detail', compact('equipments'));
+        $equipment = Equipment::find($id);
+        return view('equipment.detail', compact('equipment'));
     }
 }
