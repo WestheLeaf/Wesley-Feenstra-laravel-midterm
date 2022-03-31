@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Invoice')
+@section('title', 'Invoices')
 
 @section('content_header')
     <h1>Invoice</h1>
