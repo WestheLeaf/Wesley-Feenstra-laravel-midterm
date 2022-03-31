@@ -12,15 +12,16 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 40px">ID#</th><th>Name</th><th style="width: 40px">View</th>
+          <th style="width: 40px">ID#</th><th>Name</th><th>Email</th><th>Phone</th>
         </tr>
       </thead>
       <tbody>
         @foreach($customers AS $customer)
         <tr>
           <td>{{ $customer->id }}</td>
-          <td>{{ $customer->fullname }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('customer.show',['customer'=>$customer->id]) }}">View</a></td>
+          <td>{{ $customer->name }}</td>
+          <td>{{ $customer->email }}</td>
+          <td>{{ $customer->phone }}</td>
         </tr>
         @endforeach
       </tbody>
