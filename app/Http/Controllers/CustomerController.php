@@ -20,7 +20,7 @@ class CustomerController extends Controller
     {
         $form = $formBuilder->create(CustomerForm::class, [
             'method' => 'POST',
-            'url' => route('customers.store')
+            'url' => route('customer.store')
         ]);
         return view('customers.create', compact('form'));
     }
