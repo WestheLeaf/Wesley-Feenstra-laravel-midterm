@@ -9,7 +9,7 @@ class NoteController extends Controller
 {
     public function index()
     {
-        $manufacturers = Note::all();
+        $notes = Note::all();
         return view('note.list', compact('notes'));
     }
 }
