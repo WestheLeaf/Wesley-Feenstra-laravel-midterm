@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Customer;
-use Kris\App\LaravelFormBuilder\FormBuilder;
+use Kris\LaravelFormBuilder\FormBuilder;
 use App\Forms\CustomerForm;
 
 class CustomerController extends Controller
