@@ -3,7 +3,7 @@
 @section('title', 'Notes')
 
 @section('content_header')
-    <h1>Invoice</h1>
+    <h1>Notes</h1>
 @stop
 
 @section('content')
@@ -16,14 +16,14 @@
         </tr>
       </thead>
       <tbody>
-        @foreach($invoices AS $invoice)
+        @foreach($notes AS $note)
         <tr>
           <td>{{ $invoice->id }}</td>
           <td>{{ $customers->customer_id }}</td>
           <td>{{ $equipments->name }}</td>
           <td>{{ $equipments->price }}</td>
           <td>{{ $invoice->purchase_date }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('invoice.show',['invoice'=>$invoice->id]) }}">View</a></td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('note.show',['note'=>$note->id]) }}">View</a></td>
         </tr>
         @endforeach
       </tbody>
