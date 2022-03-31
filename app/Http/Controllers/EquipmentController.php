@@ -11,7 +11,7 @@ class EquipmentController extends Controller
 {
     public function index()
     {
-        $equipment = Equipment::all();
+        $equipments = Equipment::all();
         return view('equipment.list', compact('equipments'));
     }
 
@@ -36,6 +36,6 @@ class EquipmentController extends Controller
     public function show($id)
     {
         $customer = Equipment::find($id);
-        return view('equipment.detail', compact('equipment'));
+        return view('equipment.detail', compact('equipments'));
     }
 }
