@@ -18,10 +18,10 @@
       <tbody>
         @foreach($notes AS $note)
         <tr>
-          <td>{{ $notes->id }}</td>
-          <td>{{ $notes->service }}</td>
-          <td>{{ $notes->software }}</td>
-          <td>{{ $notes->content }}</td>
+          <td>{{ $note->id }}</td>
+          <td>{{ $note->service }}</td>
+          <td>{{ $note->software }}</td>
+          <td>{{ $note->content }}</td>
         </tr>
         @endforeach
       </tbody>
