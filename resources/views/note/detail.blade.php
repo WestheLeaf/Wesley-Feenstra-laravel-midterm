@@ -11,7 +11,7 @@
   <div class="card-body">
     <div>
         <div class="h1">
-            Note for {{ $note->equipments->name }}
+            Note
         </div>
         <dl class="row">
             <dt class="col-sm-3">Service</dt>
