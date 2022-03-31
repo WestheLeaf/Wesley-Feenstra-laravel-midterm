@@ -23,7 +23,7 @@
           <td>{{ $invoice->equipment->name }}</td>
           <td>{{ $invoice->equipment->price }}</td>
           <td>{{ $invoice->purchase_date }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('equipment.show',['equipment'=>$equipment->id]) }}">View</a></td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('invoice.show',['invoice'=>$invoice->id]) }}">View</a></td>
         </tr>
         @endforeach
       </tbody>
