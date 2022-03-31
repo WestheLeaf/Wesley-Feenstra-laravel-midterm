@@ -20,7 +20,7 @@ class Invoice extends Model
         return $this->belongsTo(Customer::class);
     }
 
-    public function equipments()
+    public function equipment()
     {
         return $this->belongsTo(Equipment::class);
     }
