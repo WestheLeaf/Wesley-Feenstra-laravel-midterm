@@ -13,17 +13,17 @@ class EquipmentForm extends Form
         $this->
             add('name', Field::TEXT, [
                 'rules' => 'required',
-                'label' => 'name'
+                'label' => 'Name'
             ])
-            ->add('price', Field::NUMBER, [
+            ->add('price', Field::TEXT, [
                 'rules' => 'required',
                 'label' => 'Price'
             ])
-            ->add('RAM', Field::NUMBER, [
+            ->add('ram', Field::TEXT, [
                 'rules' => 'required',
                 'label' => 'RAM'
             ])
-            ->add('GPU', Field::TEXT, [
+            ->add('gpu', Field::TEXT, [
                 'rules' => 'required',
                 'label' => 'GPU'
             ])

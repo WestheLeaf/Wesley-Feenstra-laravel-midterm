@@ -13,15 +13,15 @@ class CustomerForm extends Form
         $this->
             add('name', Field::TEXT, [
                 'rules' => 'required',
-                'label' => 'name'
+                'label' => 'Name'
             ])
             ->add('email', Field::TEXT, [
                 'rules' => 'required',
-                'label' => 'email'
+                'label' => 'Email'
             ])
             ->add('phone', Field::TEXT, [
                 'rules' => 'required',
-                'label' => 'phone'
+                'label' => 'Phone'
             ])
         ->add('submit', 'submit', [
             'lable' => 'submit'
