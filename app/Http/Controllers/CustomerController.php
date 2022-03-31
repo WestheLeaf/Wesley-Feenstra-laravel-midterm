@@ -33,4 +33,10 @@ class CustomerController extends Controller
         Customer::create($form->getFieldValues());
         return $this->index();
     }
+
+    public function show($id)
+    {
+        $customer = Customer::find($id);
+        return view('customer.detail', compact('customer'));
+    }
 }

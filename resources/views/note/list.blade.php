@@ -12,7 +12,7 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 40px">ID#</th><th>Service</th><th>Software</th><th>Content</th>
+          <th style="width: 40px">ID#</th><th>Service</th><th>Software</th><th>Content</th><th style="width: 40px">View</th>
         </tr>
       </thead>
       <tbody>
@@ -22,6 +22,7 @@
           <td>{{ $note->service }}</td>
           <td>{{ $note->software }}</td>
           <td>{{ $note->content }}</td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('equipment.show',['equipment'=>$equipment->id]) }}">View</a></td>
         </tr>
         @endforeach
       </tbody>
