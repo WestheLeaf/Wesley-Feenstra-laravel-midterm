@@ -22,7 +22,7 @@ class CustomerController extends Controller
             'method' => 'POST',
             'url' => route('customer.store')
         ]);
-        return view('customers.create', compact('form'));
+        return view('customer.create', compact('form'));
     }
 
     public function store(FormBuilder $formBuilder)
