@@ -22,7 +22,7 @@
           <td>{{ $note->service }}</td>
           <td>{{ $note->software }}</td>
           <td>{{ $note->content }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('equipment.show',['equipment'=>$equipment->id]) }}">View</a></td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('note.show',['note'=>$note->id]) }}">View</a></td>
         </tr>
         @endforeach
       </tbody>
