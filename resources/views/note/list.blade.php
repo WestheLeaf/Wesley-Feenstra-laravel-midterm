@@ -28,5 +28,5 @@
     </table>
   </div>
 </div>
-<a href="{{ route('invoice.create') }} " class="btn btn-primary" >Create</a>
+<a href="{{ route('note.create') }} " class="btn btn-primary" >Create</a>
 @stop
