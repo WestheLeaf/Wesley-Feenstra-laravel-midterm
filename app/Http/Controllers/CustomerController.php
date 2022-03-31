@@ -30,7 +30,7 @@ class CustomerController extends Controller
         
         $form = $formBuilder->create(CustomerForm::class);
         $form->redirectIfNotValid();
-        Customers::create($form->getFieldValues());
+        Customer::create($form->getFieldValues());
         return $this->index();
     }
 }
