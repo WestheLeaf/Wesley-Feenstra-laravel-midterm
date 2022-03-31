@@ -32,4 +32,10 @@ class EquipmentController extends Controller
         Equipment::create($form->getFieldValues());
         return $this->index();
     }
+
+    public function show($id)
+    {
+        $customer = Equipment::find($id);
+        return view('equipment.detail', compact('equipment'));
+    }
 }
