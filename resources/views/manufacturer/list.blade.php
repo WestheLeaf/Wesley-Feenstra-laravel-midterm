@@ -12,14 +12,15 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 10px">#</th><th>Task</th><th style="width: 40px">Action</th>
+          <th style="width: 40px">ID#</th><th>Sales #</th><th>Tech #</th><th style="width: 40px">Action</th>
         </tr>
       </thead>
       <tbody>
         @foreach($manufacturers AS $manufacturer)
         <tr>
           <td>{{ $manufacturer->id }}</td>
-          <td>{{ $manufacturer->name }}</td>
+          <td>{{ $manufacturer->sales_phone }}</td>
+          <td>{{ $manufacturer->tech_phone }}</td>
           <td><a class="btn btn-default btn-sm" href="{{ route('manufacturer.show',['manufacturer'=>$manufacturer->id]) }}">View</a></td>
         </tr>
         @endforeach
