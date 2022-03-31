@@ -12,7 +12,7 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 40px">ID#</th><th>Name</th><th>Email</th><th>Phone</th><th style="width: 40px">View</th>
+          <th style="width: 40px">ID#</th><th>Name</th><th style="width: 40px">View</th>
         </tr>
       </thead>
       <tbody>
@@ -20,8 +20,6 @@
         <tr>
           <td>{{ $customer->id }}</td>
           <td>{{ $customer->name }}</td>
-          <td>{{ $customer->email }}</td>
-          <td>{{ $customer->phone }}</td>
 
           <td><a class="btn btn-default btn-sm" href="{{ route('customer.show',['customer'=>$customer->id]) }}">View</a></td>
         </tr>
