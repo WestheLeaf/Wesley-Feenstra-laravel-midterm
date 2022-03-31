@@ -22,6 +22,7 @@ Route::resource('/customer', CustomerController::class);
 Route::resource('/manufacturer', ManufacturerController::class);
 Route::resource('/equipment', EquipmentController::class);
 Route::resource('/invoice', InvoiceController::class);
+Route::resource('/note', NoteController::class);
 
 Route::get('/', function () {
     return view('welcome');
